@@ -24,6 +24,8 @@ C			          general purpose
 D			          general purpose
 E			          general purpose
 F			          general purpose
+I               general purpose
+J                     general purpose
 EX 			        extra
 EXA 		        extra
 IP			        instruction pointer
@@ -43,13 +45,14 @@ ADD  3      add 	 			        adds top two vals on stack
 MUL  4      mul 	 			        multiplies top two vals on stack
 DIV  5      div 	 			        divides top two vals on stack
 SUB  6      sub 	 			        subtracts top two vals on stack
-MOV  7      mov reg_a, reg_b 	  movs the value in reg_a to reg_b 
-SET  8      set reg, val 		    sets the reg to value
-LOG  9      log a 				      prints out a
-IF   10     if reg val ip 		  if the register == val branch to the ip
-IFN  11     ifn reg val ip 		  if the register != val branch to the ip
-GLD  10     gld reg 			      loads a register to the stack
-GPT  11     gpt reg 			      pushes top of stack to the given register
-NOP  12     nop 				        nothing
+SLT  7      slt reg_a, reg_b    pushes (reg_a < reg_b) to stack
+MOV  8      mov reg_a, reg_b 	  movs the value in reg_a to reg_b 
+SET  9      set reg, val 		    sets the reg to value
+LOG  10     log a 				      prints out a
+IF   11     if reg val ip 		  if the register == val branch to the ip
+IFN  12     ifn reg val ip 		  if the register != val branch to the ip
+GLD  13     gld reg 			      loads a register to the stack
+GPT  14     gpt reg 			      pushes top of stack to the given register
+NOP  15     nop 				        nothing
 ```
 
